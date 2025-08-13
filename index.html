@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tannar & Andrew Wedding</title>
+  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'La Belle Aurore', cursive;
+      background-image: url('https://i.imgur.com/CwdXzfP.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    header {
+      background-color: rgba(235, 235, 235, 0.85);
+      padding: 40px 0 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #3d3d3d;
+      font-size: 48px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px 0 20px;
+      background-color: rgba(235, 235, 235, 0);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #6d6d6d;
+      margin: 0 16px;
+      font-weight: 550;
+      font-size: 24px;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+      padding-left: 8px;
+    }
+
+    nav a:hover { 
+      border-bottom: 2px solid #3d3d3d;
+      color: #3d3d3d; /* darker shade */
+    }
+
+    .main {
+      background-color: rgba(235, 235, 235, 0.85);
+      max-width: 750px;
+      margin: 30px auto;
+      padding: 30px 20px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      border-radius: 24px;
+    }
+
+    section {
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+
+    #QA {
+      margin-bottom: 0px;
+    }
+
+    section h2 {
+      color: #3d3d3d;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 500; /* Semi-bold */
+      font-family: 'La Belle Aurore', cursive;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+
+    #schedule h3 {
+      color: #3d3d3d;
+      text-align: center;
+      font-size: 48px;
+      font-weight: 500; /* Semi-bold */
+      font-family: 'La Belle Aurore', cursive;
+      margin: 0;           /* removes both top & bottom margins */
+      line-height: 1.2;    /* tighten vertical spacing inside each line */
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+
+    #schedule h4 {
+      color: #3d3d3d;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 500; /* Semi-bold */
+      font-family: 'La Belle Aurore', cursive;
+      margin: 0;           /* removes both top & bottom margins */
+      line-height: 1.2;    /* tighten vertical spacing inside each line */
+    }
+
+    p {
+      color: #3d3d3d; /* dark gray, clean and readable */
+      font-family: 'Segoe UI', serif;
+      font-size: 16px;
+      padding: 20px 10px;
+    }
+
+    #p2 {
+      color: #3d3d3d; /* dark gray, clean and readable */
+      text-align: center;
+      font-family: 'Segoe UI', serif;
+      font-size: 16px;
+      margin: 0px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+
+    .main img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .wedding-party-columns {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      text-align: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .wedding-party-columns .column {
+      flex: 1 1 250px;
+      max-width: 300px;
+    }
+
+    .wedding-party-columns h3 {
+      margin-bottom: 5px;
+      font-family: 'Segoe UI', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #3d3d3d;
+    }
+
+    .column-image {
+      display: block;
+      margin: 0 auto 10px;
+      width: 85px;        /* smaller size */
+      height: auto;
+    }
+
+    .stay-image {
+      display: block;
+      margin: 0 auto 10px;
+      width: 600px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
+
+    .special-link {
+    color: rgb(26, 131, 230);
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+    .special-link:hover {
+    color: rgb(18, 95, 167);
+    background-color: transparent;
+    text-decoration: underline;
+    } 
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tannar & Andrew</h1>
+    <nav>
+      <a href="#schedule">Schedule</a>
+      <a href="#party">Wedding Party</a>
+      <a href="#travel">Travel</a>
+      <a href="#stay">Where to Stay</a>
+      <a href="#registry">Registry</a>
+      <a href="#QA">Q + A</a>
+    </nav>
+  </header>
+
+  <div class="main">
+
+    <section id="schedule">
+      <h3>October 3, 2026</h3>
+      <h4>Chattanooga, TN</h4>
+      <hr style="border: none; height: 1px; width: 85%; background-color: rgba(128, 128, 128, 0.3); margin-top: 40px;">
+      <h2>Schedule</h2>
+      <p><strong>Guest Arrival</strong><br>
+      <em>4:00 pm – 4:30 pm</em><br>
+      Drive past the Chattanooga Choo Choo Main Terminal. Parking is available in front and behind the Hotel Chalet at a rate of $18 per night (includes in-and-out privileges).</p>
+    
+      <p><strong>Ceremony</strong><br>
+      <em>4:30 pm – 5:00 pm</em><br>
+      Held outdoors beneath the arbor. We’ve chosen to share our vows privately. In place of traditional readings, we’ll share heartfelt poetry.</p>
+    
+      <p><strong>Cocktail Hour</strong><br>
+      <em>5:00 pm – 6:00 pm</em><br>
+      Mingle with fellow guests in the Caboose Courtyard while the wedding party prepares for the reception.</p>
+    
+      <p><strong>Reception</strong><br>
+      <em>6:00 pm – 11:00 pm</em><br>
+      A four-course dinner served family style with an open bar. Vegan options available upon request. Following dinner, both the dance floor and the bar will open!</p>
+      
+    </section>
+
+    <section id="party">
+      <hr style="border: none; height: 1px; width: 85%; background-color: rgba(128, 128, 128, 0.3); margin-top: 40px;">
+      <h2>Wedding Party</h2>
+      <div class="wedding-party-columns">
+        <div class="column">
+          <img src="https://i.imgur.com/jDCt01Y.png" alt="transparent image" class="column-image">
+          <h3>Maid of Honor</h3>
+          <p>Sierra Dennis</p>
+          <h3>Bridesmaids</h3>
+          <p>Bre Cashman</p>
+          <p>Sagan Holbrook</p>
+          <p>Jackie Welden</p>
+          <p></p>
+        </div>
+      
+        <div class="column">
+          <img src="https://i.imgur.com/YBMNL9G.png" alt="transparent image" class="column-image">
+          <h3>Best Man</h3>
+          <p>Carson Wright</p>
+          <h3>Groomsmen</h3>
+          <p>Kevin Schadelbach</p>
+          <p>Ethan Marsh</p>
+          <p>Logan Mcghee</p>
+          <p>Lukas Jaskstas</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="travel">
+      <hr style="border: none; height: 1px; width: 85%; background-color: rgba(128, 128, 128, 0.3); margin-top: 40px;">
+      <h2>Travel</h2>
+      <p>Direct flights to Chattanooga are available from Atlanta, Tampa, Orlando, Washington DC, Chicago, and NYC. The Chattanooga airport is located about 20 minutes east of downtown.<br><br>Parking will be aviable at the venue for $18/day</p>
+    </section>
+
+    <section id="stay">
+      <hr style="border: none; height: 1px; width: 85%; background-color: rgba(128, 128, 128, 0.3); margin-top: 40px;">
+      <h2>Where to Stay</h2>
+      <p><strong>The Hotel Chalet</strong><br>
+        Our wedding will take place at <a href="https://thehotelchalet.com/lodging/" class="special-link">The Hotel Chalet</a>, also known as the Chattanooga Choo Choo, a boutique hotel in Chattanooga,
+        Nestled between the Tennessee River and the foothills of Appalachia. Standard single king and double queen rooms, as well as restored sleeper dexule 
+        train cars, will be available at a discounted rate. </p>
+
+      <img src="https://thehotelchalet.com/wp-content/uploads/2024/08/Lobby2.jpg" alt="transparent image" class="stay-image"><br>
+      <img src="https://thehotelchalet.com/wp-content/uploads/2023/08/Gallery-Page-U-1.png" alt="transparent image" class="stay-image"><br>
+      <img src="https://thehotelchalet.com/wp-content/uploads/2024/08/Pool.jpg" alt="transparent image" class="stay-image"><br>
+
+      <p><strong>Other Lodging Options</strong><br>
+      There are several other hotels available in downtown Chattanooga, we've provided a few options below, as well as a map to explore the area.<br><br>
+
+      <strong>Moxy Chattanooga</strong><br>
+      Rooms from $164<br>
+      2 minute drive / 7 minute walk from the venue<br><br>
+      <strong>La Quinta Inn & Suites</strong><br>
+      Rooms from $105<br>
+      2 minute drive / 11 minute walk from the venue<br><br>
+      <strong>Chattanooga Marriot</strong><br>
+      Rooms from $130<br>
+      3 minute drive / 19 minute walk from the venue<br><br>
+      <strong>The Chattanoogan</strong><br>
+      Rooms from $144<br>
+      4 minute drive / 14 minute walk from the venue<br><br>
+      <strong>Holiday Inn Express</strong><br>
+      Rooms from $94<br>
+      5 minute drive / 28 minute walk from the venue<br><br>
+      <strong>Hampton Inn & Suites</strong><br>
+      Rooms from $158<br>
+      5 minute drive / 30 minute walk from the venue</p>
+
+
+      <!-- Google Map Embed -->
+      <div style="text-align:center; margin-top:30px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.593516489239!2d-85.31051352431364!3d35.04031857280295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88605f1c6a93b7a1%3A0xeaf4f8a0deea2d6f!2s92%20Choo%20Choo%20Ave%2C%20Chattanooga%2C%20TN%2037408!5e0!3m2!1sen!2sus!4v1698000000000!5m2!1sen!2sus" 
+          width="600" 
+          height="450" 
+          style="border:0; border-radius:12px; box-shadow:0 4px 16px rgba(0,0,0,0.35);" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div><br>
+
+    </section>
+
+    <section id="registry">
+      <hr style="border: none; height: 1px; width: 85%; background-color: rgba(128, 128, 128, 0.3); margin-top: 40px;">
+      <h2>Registry</h2>
+      <p>Coming Soon..</p>
+    </section>
+
+    <section id="QA">
+      <hr style="border: none; height: 1px; width: 85%; background-color: rgba(128, 128, 128, 0.3); margin-top: 40px;">
+      <h2>Questions & Answers</h2>
+      <p><strong>What do I wear?</strong><br><br>
+        Semi-Formal: Tuxes and gowns are welcome, and so are suits and cocktail dresses. Coordinating with the color pallet below is encouraged for guests, but not required.</p>
+        <img src="https://i.imgur.com/d8bK4s0.png" alt="transparent image" class="stay-image"><br>
+        <p><strong>Can I bring a plus one?</strong><br><br>
+        In order to maintain an intimate experience, plus ones will only be available if indicated on your invitation.</p>
+        <p><strong>Can I bring my kids?</strong><br><br>
+        No, our wedding will be a child free event. As much as we love your little ones, they are not permitted to attend; enjoy a child free night with us.</p>
+        <p><strong>Will there be food?</strong><br><br>
+        Yes. We will be serving a four-course, family style meal for dinner including a soup/salad, entree, side, and dessert around 6pm.</p>
+        <p><strong>Will there be drinks?</strong><br><br>
+        Yes. There will be a cocktail hour immediately following the ceremony, where beer and seltzers will be available from the caboose. Following the reception dinner, enjoy an open bar on us!</p>
+        <hr style="border: none; height: 1px; width: 85%; background-color: rgba(128, 128, 128, 0.3); margin-top: 40px;">
+        <p id="p2">Wedding Countdown: <strong><span id="daysUntil"></span> Days</strong></p>
+        <script>
+          const targetDate = new Date(2026, 9, 3);
+        
+          function updateDaysUntil() {
+            const today = new Date();
+            
+            // Calculate the time difference in milliseconds
+            const timeDiff = targetDate - today;
+        
+            // Convert milliseconds to days (round up so partial days count as a full day)
+            const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+        
+            // Display result
+            document.getElementById('daysUntil').textContent = daysLeft;
+          }
+        
+          updateDaysUntil(); // Run once on load
+        </script>
+    </section>
+  </div>
+
+</body>
+</html>
