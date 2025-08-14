@@ -31,7 +31,7 @@
     }
 
     body {
-      margin: 0;
+      margin: 0px 25px 0px 25px;
       font-family: 'La Belle Aurore', cursive;
       background-image: url('https://i.imgur.com/CwdXzfP.jpeg');
       background-size: cover;
@@ -40,11 +40,21 @@
       background-position: center;
     }
 
+    /* Mobile (below 500px) */
+    @media (max-width: 500px) {
+      body {
+        background-image: url('https://i.imgur.com/CnCTSqB.jpeg');
+        background-attachment: scroll; /* better for mobile performance */
+      }
+    }
+
     header {
       background-color: rgba(235, 235, 235, 0.85);
       padding: 40px 0 10px;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+      border-radius: 0px 0px 25px 25px;
+      margin: 0px -25px 0px -25px;
     }
 
     header h1 {
@@ -143,6 +153,14 @@
       margin: 0px;
       margin-bottom: 0px;
       padding-bottom: 0px;
+    }
+
+    #p3 {
+      color: #000000b2; /* dark gray, clean and readable */
+      text-align: center;
+      font-family: 'Segoe UI', serif;
+      font-size: 12px;
+      margin: 2px;
     }
 
     .main img {
@@ -244,7 +262,7 @@
     
       <p><strong>Reception</strong><br>
       <em>6:00 pm – 11:00 pm</em><br>
-      A four-course dinner served family style with an open bar. Vegan options available upon request. Following dinner, both the dance floor and the bar will open!</p>
+      A four-course dinner served family style with red wine. Vegan options available upon request. Following dinner, both the dance floor and the bar will open!</p>
       
     </section>
 
@@ -279,7 +297,7 @@
     <section id="travel">
       <hr style="border: none; height: 1px; width: 85%; background-color: rgba(128, 128, 128, 0.3); margin-top: 40px;">
       <h2>Travel</h2>
-      <p>Direct flights to Chattanooga are available from Atlanta, Tampa, Orlando, Washington DC, Chicago, and NYC. The Chattanooga airport is located about 20 minutes east of downtown.<br><br>Parking will be aviable at the venue for $18/day</p>
+      <p>Direct flights to Chattanooga are available from Atlanta, Tampa, Orlando, Washington DC, Chicago, and NYC. The Chattanooga airport is located about 20 minutes east of downtown.<br><br>Parking will be available at the venue for $18/day</p>
     </section>
 
     <section id="stay">
@@ -340,7 +358,7 @@
       <hr style="border: none; height: 1px; width: 85%; background-color: rgba(128, 128, 128, 0.3); margin-top: 40px;">
       <h2>Questions & Answers</h2>
       <p><strong>What do I wear?</strong><br><br>
-        Semi-Formal: Tuxes and gowns are welcome, and so are suits and cocktail dresses. Coordinating with the color pallet below is encouraged for guests, but not required.</p>
+        Semi-Formal: Tuxes and gowns are welcome, and so are suits and cocktail dresses. Coordinating with the color pallete below is encouraged for guests, but not required.</p>
         <img src="https://i.imgur.com/d8bK4s0.png" alt="transparent image" class="stay-image"><br>
         <p><strong>Can I bring a plus one?</strong><br><br>
         In order to maintain an intimate experience, plus ones will only be available if indicated on your invitation.</p>
@@ -372,6 +390,5 @@
         </script>
     </section>
   </div>
-
 </body>
 </html>
